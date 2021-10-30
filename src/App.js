@@ -66,7 +66,7 @@ function App() {
 
           <CardDeck>
             {[...Array(3)].map((e, i) => (
-              <Card style={{ maxWidth: "25%", margin: "auto" }}>
+              <Card style={{ maxWidth: "25%", margin: "auto" }} key={i}>
                 <Card.Img variant="top" src={user.avatar_url} />
                 <Card.Body>
                   <Card.Title>{user.name}</Card.Title>
