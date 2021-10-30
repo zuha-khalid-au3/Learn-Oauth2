@@ -23,7 +23,7 @@ function App() {
     );
 
     axios
-      .get("http://localhost:8010/proxy/user", {
+      .get("https://api.github.com/", {
         headers: {
           Authorization: "token " + token
         }
